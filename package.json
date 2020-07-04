@@ -4,8 +4,7 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "preinstall": "chmod 744 preinstall.sh && ./preinstall.sh"
+    "explore": "gridsome explore"
   },
   "dependencies": {
     "gridsome": "^0.7.0",
