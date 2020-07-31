@@ -104,7 +104,9 @@ body {
         .text-banner {
             padding: rem(48px);
             .slim-column {
-                width: rem(815px);
+                @include respond-to("large and up") {
+                    width: rem(815px);
+                }
                 p {
                     color: white;
                     line-height: 1.5;
@@ -157,6 +159,20 @@ body {
                         }
                         &:nth-of-type(3), &:nth-of-type(5), &:nth-of-type(11) {
                             background-color: $brand-blue-3;
+                        }
+                    }
+                }
+                @include respond-to("small and down") {
+                    @include gridline(1, 0, top);
+                    .feature {
+                        &:nth-child(even) {
+                            background-color: $brand-blue-7;
+                        }
+                        &:nth-child(odd) {
+                            background-color: $brand-blue-3;
+                        }
+                        &:first-child, &:last-child {
+                            background-color: $brand-blue-4;
                         }
                     }
                 }
