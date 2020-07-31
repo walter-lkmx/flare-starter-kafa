@@ -3,6 +3,7 @@ const path = require('path')
 function addStyleResource (rule) {
 	const patterns = [
 		path.resolve(__dirname, './src/sass/_tokens.scss'),
+		path.resolve(__dirname, './src/sass/_mixins.scss'),
 		path.resolve(__dirname, 'node_modules/@lkmx/flare/src/components/**/*.scss'),
 		path.resolve(__dirname, 'node_modules/@lkmx/flare/src/functions/**/*.scss'),
 		path.resolve(__dirname, 'node_modules/@lkmx/flare/src/guides/**/*.scss'),
