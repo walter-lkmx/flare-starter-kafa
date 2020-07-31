@@ -1,1 +1,36 @@
+$brand-yellow: #FFC700;
+$brand-orange: #FB4A00;
+$brand-blue-1: #204CBC;
+$brand-blue-2: #123BA2;
+$brand-blue-3: #0C2D80;
+$brand-blue-4: #041E60;
+$brand-blue-5: #0A1D43;
+$brand-blue-6: #071530;
+$brand-blue-7: #010A1B;
+
 // app specific tokens
+$brand-primary: $brand-blue-1;
+$brand-white: white;
+$brand-secondary: #071530;
+$page-background-color: $brand-blue-6;
+
+
+//typeface
+$text-font: 'Nunito Sans', sans-serif;
+$headers-default-font: 'Nunito Sans', sans-serif;
+
+
+//header
+$header-background-color: $brand-blue-1;
+$navigation-text-decoration: none;
+$navigation-text-color: white;
+$navigation-text-color-hover: $brand-yellow;
+
+//footer
+$footer-background-color: $brand-blue-1;
+
+
+
+
+
+
