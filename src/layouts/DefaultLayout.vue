@@ -66,6 +66,9 @@
     }
     a {
       padding-right: rem(16px);
+      @include respond-to("small and down") {
+        display: block;
+      }
     }
   }
 }
