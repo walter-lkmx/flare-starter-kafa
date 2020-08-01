@@ -172,6 +172,9 @@ body {
         @include respond-to("small and down") {
           padding: rem(16px);
         }
+        @include respond-to("medium") {
+          padding-top: rem(55px);
+        }
       }
     }
   }
@@ -242,6 +245,53 @@ body {
         }
       }
       @include respond-to("small and down") {
+        grid-row-gap: rem(21px);
+        &-section {
+          &--start, &--middle, &--end {
+            .triplets {
+              &-column {
+                align-self: center;
+                &--start, &--middle, &--end {
+                  span {
+                    text-align: center;
+                    &.first {
+                      &__number {
+                      }
+                      &__text {
+                      }
+                    }
+                    &.second {
+                      &__number {
+                      }
+                      &__text {
+
+                        &:last-child {
+
+                        }
+                      }
+                    }
+                    &.third {
+                      &__text {
+                        display: block;
+                        padding: 0;
+                        margin-bottom: rem(8px);
+                      }
+                    }
+                  }
+                  .third {
+                    &__grid {
+                      grid-template-columns: repeat(1, 1fr);
+                      grid-template-rows: repeat(1, 1fr);
+                      grid-row-gap: rem(8px);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @include respond-to("medium") {
         grid-row-gap: rem(21px);
         &-section {
           &--start, &--middle, &--end {
@@ -471,51 +521,6 @@ body {
       }
     }
   }
-  .warehousing, .patio {
-    .twin-columns {
-      height: rem(336px);
-      .twins {
-        &-section {
-          &--start, &--end {
-            .twins {
-              &-column {
-                &--start, &--end {
-                  .service {
-                    &__name {
-                      color: white;
-                      text-transform: uppercase;
-                      font-weight: 900;
-                      border-bottom: 3px solid $brand-orange;
-                      padding-bottom: rem(16px);
-                      display: inline-block;
-                    }
-                    &__description {
-                      color: white;
-                      @include respond-to("large and up") {
-                        width: 85%;
-                      }
-                    }
-                    &__button {
-                      @include button($brand-yellow, black);
-                      width: auto;
-                      padding: rem(12px);
-                      text-transform: uppercase;
-                      text-align: center;
-                      text-decoration: none;
-                      font-weight: 900;
-                    }
-                  }
-                  img {
-                    height: rem(336px);
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   .warehousing {
     background-color: $brand-blue-4;
     .twin-columns {
@@ -528,6 +533,12 @@ body {
                   width: rem(336px);
                   justify-self: center;
                   padding: rem(24px);
+                  @include respond-to("small and down") {
+                    justify-self: left;
+                  }
+                  @include respond-to("medium") {
+                    justify-self: left;
+                  }
                 }
               }
             }
@@ -568,6 +579,63 @@ body {
                   width: rem(336px);
                   justify-self: left;
                   padding: rem(24px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+    .warehousing, .patio {
+    .twin-columns {
+      height: rem(336px);
+      @include respond-to("small and down") {
+        height: unset;
+      }
+      @include respond-to("medium") {
+        height: unset;
+      }
+      .twins {
+        &-section {
+          &--start, &--end {
+            .twins {
+              &-column {
+                &--start, &--end {
+                  .service {
+                    &__name {
+                      color: white;
+                      text-transform: uppercase;
+                      font-weight: 900;
+                      border-bottom: 3px solid $brand-orange;
+                      padding-bottom: rem(16px);
+                      display: inline-block;
+                    }
+                    &__description {
+                      color: white;
+                      @include respond-to("large and up") {
+                        width: 85%;
+                      }
+                    }
+                    &__button {
+                      @include button($brand-yellow, black);
+                      width: auto;
+                      padding: rem(12px);
+                      text-transform: uppercase;
+                      text-align: center;
+                      text-decoration: none;
+                      font-weight: 900;
+                    }
+                  }
+                  img {
+                    height: rem(336px);
+                    @include respond-to("small and down") {
+                      height: unset;
+                    }
+                    @include respond-to("medium") {
+                      height: unset;
+                    }
+                  }
                 }
               }
             }
