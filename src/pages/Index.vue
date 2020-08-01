@@ -169,30 +169,9 @@ body {
         &>* {
           position: unset;
         }
-      }
-    }
-
-    .twin-columns .twins-column--start {
-      align-self: center;
-    }
-
-    .twins-section--start {
-      .title {
-        font-size: rem(50px);
-        font-weight: 900;
-        line-height: 1.3;
-
-        span {
-          display: block;
+        @include respond-to("small and down") {
+          padding: rem(16px);
         }
-      }
-
-      .description {
-        margin-bottom: $gutter-large;
-      }
-
-      .delegate {
-        //@include button($brand-primary, $brand-white);
       }
     }
   }
@@ -254,6 +233,53 @@ body {
                     padding: 0 rem(5px);
                     span {
                       font-size: rem(16px);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @include respond-to("small and down") {
+        grid-row-gap: rem(21px);
+        &-section {
+          &--start, &--middle, &--end {
+            .triplets {
+              &-column {
+                align-self: center;
+                &--start, &--middle, &--end {
+                  span {
+                    text-align: center;
+                    &.first {
+                      &__number {
+                      }
+                      &__text {
+                      }
+                    }
+                    &.second {
+                      &__number {
+                      }
+                      &__text {
+
+                        &:last-child {
+
+                        }
+                      }
+                    }
+                    &.third {
+                      &__text {
+                        display: block;
+                        padding: 0;
+                        margin-bottom: rem(8px);
+                      }
+                    }
+                  }
+                  .third {
+                    &__grid {
+                      grid-template-columns: repeat(1, 1fr);
+                      grid-template-rows: repeat(1, 1fr);
+                      grid-row-gap: rem(8px);
                     }
                   }
                 }
@@ -430,6 +456,7 @@ body {
           display: block;
           margin-top: rem(24px);
           font-size: rem(40px);
+          line-height: 1;
         }
       }
       .contact-btn {
