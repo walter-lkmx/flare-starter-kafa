@@ -44,7 +44,6 @@
                 <g-link to="/service/maritime-fcl" class="service__button">Leer Más</g-link>
             </template>
             <template v-slot:middle>
-                <g-image src="~/assets/images/home-grid-1.jpg" alt="Engagement"></g-image>
             </template>
             <template v-slot:right>
                 <h2 class="service__name">Marítimo LCL</h2>
@@ -58,7 +57,6 @@
       <section class="service-row-2">
           <triplet-column>
             <template v-slot:left>
-                <g-image src="~/assets/images/home-grid-2.jpg" alt="Reliability"></g-image>
             </template>
             <template v-slot:middle>
                 <h2 class="service__name">Terrestre</h2>
@@ -66,7 +64,6 @@
                 <g-link to="/services" class="service__button">Leer Más</g-link>
             </template>
             <template v-slot:right>
-                <g-image src="~/assets/images/home-grid-3.jpg" alt="Trust"></g-image>
             </template>
           </triplet-column>
       </section>
@@ -80,7 +77,6 @@
                 <g-link to="/" class="service__button">Leer Más</g-link>
             </template>
             <template v-slot:middle>
-                <g-image src="~/assets/images/home-grid-4.jpg" alt="Engagement"></g-image>
             </template>
             <template v-slot:right>
                 <h2 class="service__name">Aéreo</h2>
@@ -107,7 +103,6 @@
             <g-link to="/" class="service__button">Leer Más</g-link>
           </template>
           <template v-slot:right>
-             <g-image src="~/assets/images/warehouse.jpg" alt="Engagement"></g-image>
           </template>
         </twin-columns>
       </section>
@@ -116,7 +111,6 @@
       <section class="patio">
         <twin-columns>
           <template v-slot:left>
-            <g-image src="~/assets/images/patio.jpg" alt="Engagement"></g-image>
           </template>
           <template v-slot:right>
             <h1 class="service__name">Patio</h1>
@@ -157,6 +151,12 @@ body {
           font-weight: 900;
           text-transform: uppercase;
           text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.51);
+          @include respond-to('small and down') {
+              font-size: rem(34px);
+          }
+          @include respond-to('medium') {
+              font-size: rem(34px);
+          }
         }
         .our-services {
           @include button($brand-yellow, black);
@@ -170,10 +170,10 @@ body {
           position: unset;
         }
         @include respond-to("small and down") {
-          padding: rem(16px);
+          padding-top: rem(89px);
         }
         @include respond-to("medium") {
-          padding-top: rem(55px);
+          padding-top: rem(89px);
         }
       }
     }
@@ -225,6 +225,12 @@ body {
                       padding: 0 rem(16px);
                     }
                   }
+                  @include respond-to("small and down") {
+                    line-height: 1.2;
+                  }
+                  @include respond-to("medium") {
+                    line-height: 1.2;
+                  }
                 }
                 .third {
                   &__grid {
@@ -245,7 +251,7 @@ body {
         }
       }
       @include respond-to("small and down") {
-        grid-row-gap: rem(21px);
+        grid-row-gap: rem(34px);
         &-section {
           &--start, &--middle, &--end {
             .triplets {
@@ -254,22 +260,6 @@ body {
                 &--start, &--middle, &--end {
                   span {
                     text-align: center;
-                    &.first {
-                      &__number {
-                      }
-                      &__text {
-                      }
-                    }
-                    &.second {
-                      &__number {
-                      }
-                      &__text {
-
-                        &:last-child {
-
-                        }
-                      }
-                    }
                     &.third {
                       &__text {
                         display: block;
@@ -292,7 +282,7 @@ body {
         }
       }
       @include respond-to("medium") {
-        grid-row-gap: rem(21px);
+        grid-row-gap: rem(34px);
         &-section {
           &--start, &--middle, &--end {
             .triplets {
@@ -301,22 +291,6 @@ body {
                 &--start, &--middle, &--end {
                   span {
                     text-align: center;
-                    &.first {
-                      &__number {
-                      }
-                      &__text {
-                      }
-                    }
-                    &.second {
-                      &__number {
-                      }
-                      &__text {
-
-                        &:last-child {
-
-                        }
-                      }
-                    }
                     &.third {
                       &__text {
                         display: block;
@@ -372,9 +346,6 @@ body {
                     font-weight: 900;
                   }
                 }
-                img {
-                  width: 100%;
-                }
               }
             }
           }
@@ -396,6 +367,7 @@ body {
           }
         }
         &--middle {
+          height: rem(400px);
           .triplets {
             &-column {
               &--middle {
@@ -429,6 +401,10 @@ body {
             }
           }
         }
+        &--middle {
+          background-image: url('../assets/images/home-grid-1.jpg');
+          background-size: cover;
+        }
         &--end {
           .triplets {
             &-column {
@@ -445,14 +421,14 @@ body {
     background-color: $brand-blue-7;
     .triplets {
       &-section {
-        &--start, &--end {
+        &--start {
+          height: rem(400px);
           .triplets {
             &-column {
-              &--start, &--end {
+              &--start {
                 padding: 0;
-                img {
-                  width: 100%;
-                }
+                background-image: url('../assets/images/home-grid-2.jpg');
+                background-size: cover;
               }
             }
           }
@@ -463,6 +439,18 @@ body {
               &--middle {
                 padding: rem(24px);
                 background-color: $brand-blue-3;
+              }
+            }
+          }
+        }
+        &--end {
+          height: rem(400px);
+          .triplets {
+            &-column {
+              &--end {
+                padding: 0;
+                background-image: url('../assets/images/home-grid-3.jpg');
+                background-size: cover;
               }
             }
           }
@@ -481,6 +469,10 @@ body {
               }
             }
           }
+        }
+        &--middle {
+          background-image: url('../assets/images/home-grid-4.jpg');
+          background-size: cover;
         }
         &--end {
           .triplets {
@@ -521,6 +513,7 @@ body {
       }
     }
   }
+  
   .warehousing {
     background-color: $brand-blue-4;
     .twin-columns {
@@ -544,10 +537,12 @@ body {
             }
           }
           &--end {
+            background-image: url('../assets/images/warehouse.jpg');
+            background-size: cover;
             .twins {
               &-column {
                 &--end {
-                  width: 100%;
+                  //width: 100%;
                   padding: 0;
                 }
               }
@@ -563,10 +558,12 @@ body {
       .twins {
         &-section {
           &--start {
+            background-image: url('../assets/images/patio.jpg');
+            background-size: cover;
             .twins {
               &-column {
                 &--start {
-                  width: 100%;
+                  //width: 100%;
                   padding: 0;
                 }
               }
@@ -599,6 +596,12 @@ body {
       .twins {
         &-section {
           &--start, &--end {
+            @include respond-to("small and down") {
+              height: rem(336px);
+            }
+            @include respond-to("medium") {
+              height: rem(336px);
+            }
             .twins {
               &-column {
                 &--start, &--end {
