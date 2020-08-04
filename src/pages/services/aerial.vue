@@ -2,16 +2,16 @@
   <default-layout>
     <base-page>
         <!-- SimpleHero -->
-        <section class="maritime-fcl-intro">
+        <section class="aerial-intro">
             <simple-hero>
-            <h1 class="title">Marítimo FCL</h1>
+            <h1 class="title">Aéreo</h1>
             </simple-hero>
         </section>
 
         <!--TextBanner-->
-        <section class="maritime-description">
+        <section class="aerial-description">
             <text-banner>
-                <p>Este tipo de flete te garantiza mayor rentabilidad por volumen, seguridad y flexibilidad en la entrega de tu mercancía de importación y exportación. Envía tus productos al otro lado del mundo con la asesoría de nuestros expertos en logística y recibe tu mercancía de importación mediante el método más confiable, seguro y eficiente.</p>
+                <h2>El mejor tiempo de entrega en envíos de carga seca y refrigerada a México y el mundo.</h2>
             </text-banner>
         </section>
 
@@ -21,45 +21,37 @@
                 <section class="features-grid">
                     <div class="feature">
                         <h2 class="service__name">Destinos</h2>
-                        <p class="service__description">Principales puertos en México, Asia, Europa, América y todo el mundo.</p>
-                    </div>
-                    <div class="feature">
-                        <h2 class="service__name">Equipo Disponible</h2>
-                        <p class="service__description">20' y 40' DC<br>40' HC<br>40' RF<br>20' y 40' FR<br>20' y 40' OT</p>
+                        <ul class="service__description">
+                            <li>Nacionales</li>
+                            <li>Entregas en los principales aeropuertos de México, América, Asia y Europa.</li>
+                        </ul>
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Tipo de Carga</h2>
-                        <p class="service__description">Seca<br>Refrigerada y<br>Peligrosa</p>
-                    </div>
-                    <div class="feature">
-                        <h2 class="service__name">Carga Mínima</h2>
-                        <p class="service__description">Desde 1 contenedor</p>
-                    </div>
-                    <div class="feature">
-                        <h2 class="service__name">Cálculo del Costo</h2>
-                        <p class="service__description">Por contenedor</p>
+                        <ul class="service__description">
+                            <li>Seca.</li>
+                            <li>Refrigerada.</li>
+                            <li>Urgente.</li>
+                            <li>Peligrosa.</li>
+                        </ul>
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Tiempo de Entrega</h2>
-                        <p class="service__description">Semanas</p>
-                    </div>
-                    <div class="feature">
-                        <h2 class="service__name">Monitoreo</h2>
-                        <p class="service__description">A través de nuestra plataforma</p>
+                        <p class="service__description">Horas / Días</p>
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Alianzas</h2>
-                        <p class="service__description">Cosco<br>APL<br>ONE</p>
-                    </div>
-                    <div class="feature">
-                        <h2 class="service__name">Servicios Adicionales</h2>
-                        <p class="service__description">Servicio de resguardo en patio o almacén</p>
-                        <p class="service__description">Etiquetado de mercancía para importación / exportación</p>
+                        <ul class="service__description">
+                            <li>Aeroméxico.</li>
+                            <li>Interjet.</li>
+                            <li>Volaris.</li>
+                            <li>Vivaerobus.</li>
+                            <li>Vuelos Internacionales vía Los Angeles.</li>
+                        </ul>
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Horarios</h2>
-                        <p class="service__description">Horario flexible para la carga/descarga del contenedor</p>
-                        <p class="service__description">Arribos y zarpes calendarizados semanales</p>
+                        <p class="service__description">Salidas diarias.</p>
                     </div>
                 </section>
             </single-column>
@@ -79,9 +71,9 @@ export default {
 
 <style lang="scss">
 body {
-    .maritime-fcl-intro {
+    .aerial-intro {
         .simple-hero {
-            background-image: url('../../assets/images/services/hero-maritime-fcl.jpg');
+            background-image: url('../../assets/images/services/hero-aerial.jpg');
             background-size: cover;
             &__content {
                 color: white;
@@ -92,6 +84,12 @@ body {
                     font-weight: 900;
                     text-transform: uppercase;
                     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.51);
+                    @include respond-to('small and down') {
+                        font-size: rem(34px);
+                    }
+                    @include respond-to('medium') {
+                        font-size: rem(34px);
+                    }
                 }
                 &>* {
                     position: unset;
@@ -99,7 +97,7 @@ body {
             }
         }
     }
-    .maritime-description {
+    .aerial-description {
         background-color: $brand-blue-6;
         .text-banner {
             padding: rem(48px);
@@ -107,7 +105,7 @@ body {
                 @include respond-to("large and up") {
                     width: rem(815px);
                 }
-                p {
+                h2 {
                     color: white;
                     line-height: 1.5;
                 }
@@ -116,12 +114,14 @@ body {
     }
     .features {
         background-color: $brand-blue-5;
+        padding-bottom: $gutter-xxlarge;
         .single-column {
             .features-grid {
                 @include gridline(4, 0, top);
                 .feature {
                     color: white;
                     padding: rem(24px);
+                    min-height: rem(292px);
                     .service {
                         &__name {
                             color: white;
@@ -133,8 +133,14 @@ body {
                         }
                         &__description {
                             color: white;
+                            li {
+                                padding-bottom: $gutter-small;
+                                &:before {
+                                    content: "- ";
+                                }
+                            }
                             @include respond-to('large and up') {
-                            width: 85%;
+                                width: 85%;
                             }
                         }
                     }
