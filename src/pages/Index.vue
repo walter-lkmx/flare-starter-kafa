@@ -7,7 +7,7 @@
           <span>Revolucionamos</span>
           <h1 class="title">Todo lo que necesitas</h1>
           <p class="description">Ofrecemos la red de servicios más robusta y flexible</p>
-          <g-link to="/services" class="our-services">Nuestros servicios</g-link>
+          <g-link to="/services/maritime-fcl" class="our-services">Nuestros servicios</g-link>
         </simple-hero>
       </section>
 
@@ -41,14 +41,14 @@
             <template v-slot:left>
                 <h2 class="service__name">Marítimo FCL</h2>
                 <p class="service__description">Mayor rentabilidad por volumen, seguridad y flexibilidad en la entrega de tu mercancía de importación y exportación.</p>
-                <g-link to="/service/maritime-fcl" class="service__button">Leer Más</g-link>
+                <g-link to="/services/maritime-fcl" class="service__button">Leer Más</g-link>
             </template>
             <template v-slot:middle>
             </template>
             <template v-slot:right>
                 <h2 class="service__name">Marítimo LCL</h2>
                 <p class="service__description">Ideal para emprendedores y empresas que requieren el servicio marítimo sin la necesidad de enviar un contenedor completo.</p>
-                <g-link to="/" class="service__button">Leer Más</g-link>
+                <g-link to="/services/maritime-lcl" class="service__button">Leer Más</g-link>
             </template>
           </triplet-column>
       </section>
@@ -61,7 +61,7 @@
             <template v-slot:middle>
                 <h2 class="service__name">Terrestre</h2>
                 <p class="service__description">Total flexibilidad en rutas, equipo y tiempo de carga y descarga.</p>
-                <g-link to="/services" class="service__button">Leer Más</g-link>
+                <g-link to="/services/terrestrial" class="service__button">Leer Más</g-link>
             </template>
             <template v-slot:right>
             </template>
@@ -74,14 +74,14 @@
             <template v-slot:left>
                 <h2 class="service__name">Ferroviario</h2>
                 <p class="service__description">Para envío de grandes volúmenes de cualquier tipo de mercancía a México y Estados Unidos.</p>
-                <g-link to="/" class="service__button">Leer Más</g-link>
+                <g-link to="/services/ferro" class="service__button">Leer Más</g-link>
             </template>
             <template v-slot:middle>
             </template>
             <template v-slot:right>
                 <h2 class="service__name">Aéreo</h2>
                 <p class="service__description">El mejor tiempo de entrega en envíos de carga seca y refrigerada a México y el mundo.</p>
-                <g-link to="/" class="service__button">Leer Más</g-link>
+                <g-link to="/services/aerial" class="service__button">Leer Más</g-link>
             </template>
           </triplet-column>
       </section>
@@ -100,7 +100,7 @@
           <template v-slot:left>
             <h2 class="service__name">Almacenes</h2>
             <p class="service__description">Mayor rentabilidad por volumen, seguridad y flexibilidad en la entrega de tu mercancía de importación y exportación. </p>
-            <g-link to="/" class="service__button">Leer Más</g-link>
+            <g-link to="/services/warehouse" class="service__button">Leer Más</g-link>
           </template>
           <template v-slot:right>
           </template>
@@ -115,7 +115,7 @@
           <template v-slot:right>
             <h1 class="service__name">Patio</h1>
             <p class="service__description">Mayor rentabilidad por volumen, seguridad y flexibilidad en la entrega de tu mercancía de importación y exportación.</p>
-            <g-link to="/" class="service__button">Leer Más</g-link>
+            <g-link to="/services/patio" class="service__button">Leer Más</g-link>
           </template>
         </twin-columns>
       </section>
