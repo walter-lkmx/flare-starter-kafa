@@ -162,6 +162,8 @@ body {
                                 padding-bottom: $gutter-small;
                                 &:before {
                                     content: "- ";
+                                    position: absolute;
+                                    margin-left: - $gutter-small;
                                 }
                             }
                             @include respond-to('large and up') {
