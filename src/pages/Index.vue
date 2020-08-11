@@ -6,8 +6,8 @@
         <simple-hero>
           <span>Revolucionamos</span>
           <h1 class="title">Todo lo que necesitas</h1>
-          <p class="description">Ofrecemos la red de servicios más robusta y flexible</p>
-          <g-link to="/services/maritime-fcl" class="our-services">Nuestros servicios</g-link>
+          <p class="description">Tu enlace global con operación local</p>
+          <a href="#services" class="our-services">Nuestros servicios</a>
         </simple-hero>
       </section>
 
@@ -36,7 +36,7 @@
       </section>
 
       <!-- TripletColumns / Service Row 1 -->
-      <section class="service-row-1">
+      <section class="service-row-1" id="services">
           <triplet-column>
             <template v-slot:left>
                 <h2 class="service__name">Marítimo FCL</h2>
@@ -90,7 +90,7 @@
       <section class="contact-us">
         <text-banner>
           <h1>CONTAMOS SOLUCIONES PARA EL MANEJO DE TU CARGA <span>EN REPOSO Y EN MOVIMIENTO</span></h1>
-          <g-link to="/" class="contact-btn">Contáctanos</g-link>
+          <g-link to="/Contact" class="contact-btn">Contáctanos</g-link>
         </text-banner>
       </section>
 

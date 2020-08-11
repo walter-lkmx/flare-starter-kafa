@@ -55,6 +55,9 @@
                             <li>Cosco Shipping</li>
                             <li>APL</li>
                             <li>ONE</li>
+                            <li>CMA-CGM</li>
+                            <li>Hapag Lloyd</li>
+                            <li>MSC</li>
                         </ul>
                     </div>
                     <div class="feature">
@@ -63,6 +66,8 @@
                             <li>Recibimos carga suelta, la flejamos y colocamos en pallets.</li>
                             <li>Servicio de resguardo en patio o almacén.</li>
                             <li>Etiquetado de mercancía para importación / exportación.</li>
+                            <li>Conexiones para contenedor refrigerado.</li>
+                            <li>“Cross Docking”.</li>
                         </ul>
                     </div>
                     <div class="feature">

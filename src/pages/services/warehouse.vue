@@ -41,7 +41,10 @@
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Servicios Adicionales</h2>
-                        <p class="service__description">Maniobras de consolidación y desconsolidación.</p>
+                        <ul class="service__description">
+                            <li>Maniobras de consolidación y desconsolidación.</li>
+                            <li>Etiquetado de mercancía.</li>
+                        </ul>
                     </div>
                 </section>
             </single-column>
