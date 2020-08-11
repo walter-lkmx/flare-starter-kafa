@@ -5,10 +5,11 @@
         <g-image src="~/assets/images/kafa-logo.svg" alt="logo"></g-image>
       </template>
       <template v-slot:navigation>
-        <simple-nav-item to="/services/maritime-fcl">Marítimo</simple-nav-item>
+        <simple-nav-item to="/services/maritime-fcl">Marítimo FCL</simple-nav-item>
+        <simple-nav-item to="/services/maritime-lcl">Marítimo LCL</simple-nav-item>
         <simple-nav-item to="/services/terrestrial">Terrestre</simple-nav-item>
         <simple-nav-item to="/services/aerial">Aéreo</simple-nav-item>
-        <simple-nav-item to="/services/ferro">Ferro</simple-nav-item>
+        <simple-nav-item to="/services/ferro">Ferroviario</simple-nav-item>
         <simple-nav-item to="/Contact">Contacto</simple-nav-item>
       </template>
       <template v-slot:nav-toggle>

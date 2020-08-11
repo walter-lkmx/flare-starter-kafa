@@ -63,6 +63,9 @@
                             <li>Cosco</li>
                             <li>APL</li>
                             <li>ONE</li>
+                            <li>CMA-CGM</li>
+                            <li>Hapag Lloyd</li>
+                            <li>MSC</li>
                         </ul>
                     </div>
                     <div class="feature">
@@ -70,6 +73,8 @@
                         <ul class="service__description">
                             <li>Servicio de resguardo en patio o almacén.</li>
                             <li>Etiquetado de mercancía para importación / exportación.</li>
+                            <li>Conexiones para contenedor refrigerado.</li>
+                            <li>“Cross Docking”.</li>
                         </ul>
                     </div>
                     <div class="feature">

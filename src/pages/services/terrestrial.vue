@@ -44,6 +44,7 @@
                             <li>Refrigerada.</li>
                             <li>Con sobre-dimensiones.</li>
                             <li>Con sobre-peso.</li>
+                            <li>Hazmat o peligroso.</li>
                         </ul>
                     </div>
                     <div class="feature">
@@ -64,7 +65,11 @@
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Seguridad</h2>
-                        <p class="service__description">Todos los movimientos son realizados por autopistas.</p>
+                        <ul class="service__description">
+                            <li>Todos los movimientos son realizados por autopistas.</li>
+                            <li>Unidades con seguro.</li>
+                            <li>Seguro a la carga.</li>
+                        </ul>
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Servicios Adicionales</h2>

@@ -4,7 +4,7 @@
         <!-- SimpleHero -->
         <section class="ferro-intro">
             <simple-hero>
-            <h1 class="title">Ferro</h1>
+            <h1 class="title">Ferroviario</h1>
             </simple-hero>
         </section>
 

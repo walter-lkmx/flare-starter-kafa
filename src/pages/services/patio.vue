@@ -21,11 +21,16 @@
                         <ul class="service__description">
                             <li>El Sauzal, Ensenada, B.C.</li>
                             <li>Hermosillo, Son.</li>
+                            <li>Guadalajara, Jal.</li>
                         </ul>
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Tipo de Carga</h2>
-                        <p class="service__description">Contenedores cargados de importación o exportación.</p>
+                        <ul class="service__description">
+                            <li>Contenedores cargados de importación o exportación.</li>
+                            <li>Contenedores Refrigerados</li>
+                            <li>Contenedores con carga peligrosa.</li>
+                        </ul>
                     </div>
                     <div class="feature">
                         <h2 class="service__name">Sistemas de seguridad</h2>
