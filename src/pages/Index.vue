@@ -4,9 +4,8 @@
       <!-- SimpleHero -->
       <section class="intro">
         <simple-hero>
-          <span>Revolucionamos</span>
-          <h1 class="title">Todo lo que necesitas</h1>
-          <p class="description">Tu enlace global con operación local</p>
+          <h1 class="title">Tu enlace global<br>con operación local</h1>
+          <p class="description">Ofrecemos la red de servicios más robusta y flexible.</p>
           <a href="#services" class="our-services">Nuestros servicios</a>
         </simple-hero>
       </section>
@@ -140,7 +139,7 @@ body {
       background-size: cover;
       &__content {
         color: white;
-        padding-top: rem(245px);
+        padding-top: rem(195px);
         span {
           text-transform: uppercase;
           letter-spacing: 2.4px;
@@ -152,7 +151,7 @@ body {
           text-transform: uppercase;
           text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.51);
           @include respond-to('small and down') {
-              font-size: rem(34px);
+              font-size: rem(28px);
           }
           @include respond-to('medium') {
               font-size: rem(34px);
